@@ -1,0 +1,14 @@
+c7c299e6b7f637b1c19649c0f352993b *DESCRIPTION
+38b7b3ae452735e39a0352fe4666f96a *NAMESPACE
+32fd93200d0d6336e170fce6570ec9f6 *R/dkay.R
+c762db444a4820430ca3e0cef9625198 *R/pkay.R
+3772fe32e2fd6072a8516ff36f37e7d1 *R/qkay.R
+67cf56d6ef20141dbfdd80c350b3cb40 *R/qqplot.R
+2f9d73274b17090b6105fa38839d8d0d *R/rkay.R
+721e9b532acbd5d660d9d2e8b440d0d7 *data/penicillin.RData
+3ab438cecdab16825dd1e00852f6c977 *man/dkay.Rd
+8b8cbfc5fe1823bb505304ee08f4a357 *man/penicillin.Rd
+6935f4d34650b6f0f825fd373043f8cb *man/pkay.Rd
+979cf0d41b8ba694367b44e24d1d78fa *man/qkay.Rd
+c42b7b3279f057a96119102b90dc434d *man/qqtest.Rd
+818d41886721ca00668166e8ba2de8e7 *man/rkay.Rd
