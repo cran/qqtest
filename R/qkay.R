@@ -53,8 +53,8 @@
 #' #
 #' # But not so much like it came from a K on 1 degree of freedom
 #' qqtest(q5, dist="kay",df=1)
-#' #
+#' 	
 qkay <- function(p, df, ncp=0, upper.tail = FALSE, log.p = FALSE) {
-				chi_ncp <- df * ncp^2
-				sqrt(qchisq(p, df, chi_ncp, !upper.tail, log.p) /df)
+				chincp <- df * ncp^2
+				sqrt(qchisq(p, df, chincp, !upper.tail, log.p) /df)
 				}
