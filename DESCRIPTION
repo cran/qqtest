@@ -1,8 +1,8 @@
 Package: qqtest
 Type: Package
 Title: Self Calibrating Quantile-Quantile Plots for Visual Testing
-Version: 1.1.1
-Date: 2016-02-23
+Version: 1.2.0
+Date: 2020-03-14
 Authors@R: person("Wayne", "Oldford", email="rwoldford@uwaterloo.ca",
     role=c("aut", "cre"))
 Maintainer: Wayne Oldford <rwoldford@uwaterloo.ca>
@@ -25,10 +25,15 @@ Description: Provides the function qqtest which incorporates uncertainty in its
 LazyData: true
 License: GPL-3
 Depends: R (>= 2.10.0)
-Imports: grDevices, robust, stats
+Imports: grDevices, stats
 NeedsCompilation: no
-Packaged: 2016-02-23 22:14:26 UTC; rwoldford
+Packaged: 2020-03-16 15:50:02 UTC; rwoldford
 Author: Wayne Oldford [aut, cre]
-RoxygenNote: 5.0.1
+Encoding: UTF-8
+RoxygenNote: 7.0.2
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
+URL: https://github.com/rwoldford/qqtest,
+        https://rwoldford.github.io/qqtest/
 Repository: CRAN
-Date/Publication: 2016-02-25 00:32:10
+Date/Publication: 2020-03-16 16:40:05 UTC
