@@ -1,7 +1,7 @@
-## ---- setup, echo=FALSE-------------------------------------------------------
+## ----setup, echo=FALSE--------------------------------------------------------
 library(qqtest)
 
-## ---- echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.width=7, fig.height=4, fig.cap="As m increases, Km has better properties"----
+## ----echo=FALSE, warning=FALSE, message=FALSE, fig.align="center", fig.width=7, fig.height=4, fig.cap="As m increases, Km has better properties"----
 # compare K density to that of chi as degrees of freedom increase
 op <-par(mfrow=c(1,2))
 p <- seq(0.001, .999, 0.001)
@@ -55,7 +55,7 @@ legend("topright",
        cex=0.75, bty="n", col="steelblue")
 par(op)
 
-## ---- echo=FALSE, results='asis'----------------------------------------------
+## ----echo=FALSE, results='asis'-----------------------------------------------
 df <- c(1:10,seq(15, 40, 5))
 p <- c( 0.05, 0.5, 0.95)
 fun <- function(p) qkay(p,df)
@@ -63,21 +63,21 @@ table <- as.data.frame(cbind(df,sapply(p, fun)))
 colnames(table) <- c("df", paste0("p=", p))
 knitr::kable(table)
 
-## ---- warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
+## ----warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
 x <- seq(0,2,0.01)
 plot(x, dkay(x, df=10), type="l", col="steelblue", 
      main="Density", xlab="x", ylab="f(x)")
 abline(v=1.0, lty=2, col="grey")
 
 
-## ---- warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
+## ----warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
 x <- seq(0,2,0.01)
 plot(x, pkay(x, df=10), type="l", col="steelblue", 
      main="Distribution", xlab="x", ylab="F(x)")
 abline(v=1.0, lty=2, col="grey")
 
 
-## ---- warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
+## ----warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
 x <- seq(0,2,0.01)
 p <- pkay(x, df=10)
 plot(p, qkay(p, df=10), type="l", col="steelblue", 
@@ -85,7 +85,7 @@ plot(p, qkay(p, df=10), type="l", col="steelblue",
 abline(h=1.0, lty=2, col="grey")
 
 
-## ---- warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
+## ----warning=FALSE, message=FALSE, fig.align="center", fig.width=5, fig.height=4----
 x <- rkay(1000, df=10)
 hist(x, col="steelblue", 
      main="Pseudo-random numbers", xlab="x")
